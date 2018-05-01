@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/vnd.microsoft.icon" href="assets/favicon.ico" />
+<title>DAN+ONTHESTREET</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #000;
+  width: 100%
+}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("assets/IMG-91762-3 copy.jpg");
+  min-height: 300px;
+}
+.bgimg-2 {
+  background-image: url("assets/IMG-9185 - Copy2.jpg");
+  min-height: 300px;
+}
+.bgimg-3 {
+  background-image: url("assets/IMG_9390 - Copy2.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("assets/IMG-91762-3 copy.jpg");
+  min-height: 300px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #F5F5F5;
+  color: #000;
+  padding: 6px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  cursor: default;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #000;
+}
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+ .storeimg {
+	transition: all 0.5s;
+	background-color: #000;
+	padding:0px;
+	border-style:solid;
+	border-width:10px;
+	margin:60px;
+	margin-left:80px;
+	border-color:#000;
+	box-shadow: 0px 1px 50px #85C1E9;
+	}
+ .storeimg:hover {
+	box-shadow: 0px 1px 70px #85C1E9;
+	padding:10px;
+	}
+ #nav
+ {
+	background-image: url("assets/navbar3.jpg");
+	opacity: 1;
+	width:100%;
+	height:63px;
+	position:fixed;
+	float:left;
+	z-index: 3;
+	box-shadow: 0px 1px 70px #000;
+	 transition: all 0.3s;
+}
+.title {	
+	color:#85C1E9;	
+	text-shadow: -4px 0 #000,0 4px #000,9px 0 #f7f7f7,0 -2px #000;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font-size:70px;
+	height: 100px;
+	width:300px;	
+	margin-top:0px;	
+	top: -10px;
+	left:50%;
+	margin-left: -150px; 
+	font-weight:600;	
+	float:left;
+	z-index: 99;
+	opacity: 1;
+	position: fixed;
+	transition: all 0.3s;
+}
+.title:hover {
+	font-size: 70px;
+	font-weight: 650;
+	color: #7A3E16;
+	text-shadow: -4px 0 #f7f7f7,0 4px #f7f7f7,9px 0 #000,0 -2px #f7f7f7;
+	cursor: no-drop;
+}
+.subtitle {	
+	color:#7CF681;	
+	font-family:verdana;	
+	font-size:15px;
+}
+#navigation{	
+	list-style-type:none;	
+}
+li {	
+	display:inline;	
+	padding:40px;
+}
+#nav a{	
+	font-family:Arial,Helvetica,sans-serif;	
+	text-decoration:none;	
+	color:#000;
+}	
+#nav:hover {	
+	background-image: url("assets/navbar3.jpg");
+	color:#85C1E9;
+	box-shadow: 0px 1px 70px #000;
+}
+#body {	
+	width:850px;	
+	margin:0px auto;	
+	margin-top:80px;	
+	font-family:verdana;
+}
+#imgtop img.hover {
+	box-shadow: 0px 1px 70px #f7f7f7;
+}
+hr {
+	border:1px solid #262626;
+}
+#cpp {
+	font-family:Courier New, Courier, monospace;
+	color: #f7f7f7;
+	font-size: 15px;
+	}
+.card {
+        position: absolute;
+        display: inline-block;
+		transition: all 0.4s;
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+		transition: all 0.4s;
+    }
+	.card:hover .img-bot {
+        opacity: 0.65;
+		transition: 0.4s;
+    }
+    .card:hover .img-top {
+        display: inline;
+		transition: 0.4s;
+    }
+
+</style>
+</head>
+<body>
+<!-- Navigation bar HTML -->
+<div id="nav">
+	<a href="onthestreet.html">
+	<i><p class="title">O &bull; T &bull; S</p></i>
+	</a>
+	<ul id="navigation">	
+	</ul>
+</div>
+<div class="bgimg-1" style="opacity:0.95;">
+</div>
+  <div class="caption">
+    <span class="border" style="opacity: 0.75;">ON THE STREET</span>
+
+  </div>
+<div style="color: #000; text-align: center; padding: 50px 80px; background-color: #f7f7f7;">
+  <h3 style="text-align:center;top:710px;">The latest release</h3>
+  <div id="imgtop">
+  <img src="assets/overvyue.jpg" height="604px" width="726px"style="border-style:double;border-width:20px;box-shadow: 0px 1px 50px #000;">
+</div>
+  </div>
+<!-- 2nd image and caption -->
+<div class="bgimg-2" style="opacity:0.85;">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;box-shadow: 0px 1px 50px #f7f7f7;">MINIMAL. COLLECTION</span>
+	
+  </div>
+</div>
+<!-- the gallery/artistio renderings -->
+<div style="position:static;">
+  <div style="padding: 10px 60px; z-index: 1; background-color: #f7f7f7;">
+	<!-- <img src="assets/redblue1.gif" height="250px" width="350px" style="border-style:double;border-width:5px;margin:20px;">
+	<img src="assets/yellowlift.gif" height="250px" width="350px" style="border-style:solid;border-width:12px;margin:20px;border-color:#000;">
+	<img src="assets/redblue1sped.gif" height="250px" width="350px" style="border-style:solid;border-width:8px;margin:20px;"><br /> -->
+	<a href="shirt1.html">
+	<img src="assets/smoking.jpg" height="504px" width="322px" class="storeimg" style="margin-left:50px;">
+	</a>
+	<a href="shirt2.html">
+	<img src="assets/komodo.jpg" height="504px" width="322px" class="storeimg">
+	</a>
+	<a href="shirt3.html">
+	<img src="assets/otstee.jpg" height="504px" width="322px" class="storeimg">
+    </a>
+	<a href="shirt3.html">
+	<img src="assets/numberfour.jpg" height="504px" width="322px" class="storeimg" style="margin-left:50px;">
+    </a>
+	<a href="shirt3.html">
+	<img src="assets/numberfive.jpg" height="504px" width="322px" class="storeimg">
+    </a>
+	<a href="shirt3.html">
+	<img src="assets/numbersix.jpg" height="504px" width="322px" class="storeimg">
+    </a>
+  </div>
+</div>
+<!-- Third image/caption -->
+<div class="bgimg-4" style="opacity:0.90;">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;box-shadow: 0px 1px 50px #f7f7f7;">¿¿¿¿PAST COLLECTIONS¿¿¿¿</span>
+  </div>
+</div>
+<div style="position:relative;">
+  <!-- <div style="color:#85C1E9; text-align:center; padding:50px 80px;z-index:1;background-color: #ffffc0;">
+	<div class="card"; style="border-style:solid;border-width:10px;box-shadow: 0px 1px 50px #000;margin:20px;left:40px;">
+        <img src="assets/sinkpose.jpg"  height="500px;" width="376px;" class="img-bot" alt="Card Back">
+        <img src="assets/sinkposecrop.gif" height="400px;" width="276px;" style= "padding: 50px; opacity: 1;" class="img-top" alt="Card Front">
+    </div>
+	<img src="assets/sweaterinvert.gif" height="605px" width="454px" style="border-style:solid;border-width:10px;margin:20px;">
+	<div class="card"; style="border-style:solid;border-width:10px;margin:20px;border-color:#C3B091;">
+		<img src="assets/spacejen.jpg" height="350px" width="255px" class="img-bot" alt="Card Back">
+		<img src="assets/spacejen.gif" height="300px" width="205px" style= "padding:20px; opacity: 1;" class="img-top" alt="Card Front" >
+	</div>
+  </div> -->
+</div>
+<!-- <div class="bgimg-3" style="opacity:0.90;">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">MORE TO BE CONTINUED</span>
+  </div>
+</div> --> 
+</body>
+</html>
