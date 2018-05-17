@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
 <link rel="icon" type="image/vnd.microsoft.icon" href="assets/favicon.ico" />
 <title>ONTHESTREET</title>
 <style>
@@ -80,11 +81,37 @@ body, html {
 	transition: all 0.3s;
 }
 .title:hover {
-	font-size: 70px;
+	font-size: 76px;
 	font-weight: 650;
+	width: 350px;
 	color: #7A3E16;
 	text-shadow: -4px 0 #f7f7f7,0 4px #f7f7f7,9px 0 #000,0 -2px #f7f7f7;
 	cursor: no-drop;
+}
+.undertitle {	
+	color:#000;	
+	text-shadow: -2px 0 #f7f7f7,0 2px #f7f7f7,2px 0 #f7f7f7,0 -2px #f7f7f7;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font-size:20px;
+	height: 20px;
+	width:300px;	
+	margin-top:0px;	
+	top: 70px;
+	left:57%;
+	margin-left: -150px; 
+	font-weight:600;	
+	float:left;
+	z-index: 98;
+	opacity: 1;
+	position: fixed;
+	transition: all 0.3s;
+}
+.undertitle:hover {
+	cursor:no-drop;
+	}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .caption {
   position: absolute;
@@ -97,11 +124,30 @@ body, html {
 .caption span.border {
   background-color: #F5F5F5;
   color: #000;
-  padding: 6px;
+  padding: 8px;
   font-size: 25px;
   letter-spacing: 10px;
+  transition: all 0.5s;
   cursor: default;
 }
+#smalltitle {
+	background-color:transparent;
+	font-size:28px;
+	font-weight: 600;
+	opacity: 0.9;
+	color: #000;
+	box-shadow: 0px 1px 50px #000;
+	transition: all 0.3s;
+	}
+#smalltitle:hover {
+	background-color:#000;
+	font-size:31px;
+	font-weight:650;
+	opacity: 0.9;
+	color: #f2f2f2;
+	box-shadow: 0px 0px 0px #000;
+	cursor: pointer;
+	}
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -147,8 +193,8 @@ h3 {
 <body>
 <!-- Navigation bar HTML -->
 <div id="nav">
-	<a href="danonthestreet.html">
-	<i><p class="title">O &bull; T &bull; S</p></i>
+	<a href="sectiondiv.html">
+	<i><p class="title">O &bull; T &bull; S</p><p class="undertitle">minimal collektion</p></i>
 	</a>
 </div>
 
@@ -164,62 +210,14 @@ h3 {
   <img src="assets/overvyue.jpg" height="604px" width="726px"style="border-style:double;border-width:20px;box-shadow: 0px 1px 50px #000;">
 </div>
   </div> 
-<!-- 2nd image and caption 
- <div class="bgimg-2" style="opacity:0.95;">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;box-shadow: 0px 1px 50px #f7f7f7;">MINIMAL. COLLECTION</span>
-	
-  </div> 
-</div> 
-<!-- the gallery/artistio renderings 
-<div style="position:static;">
-  <div style="padding: 10px 60px; z-index: 1; background-color: #f7f7f7;">
-    <img src="assets/redblue1.gif" height="250px" width="350px" style="border-style:double;border-width:5px;margin:20px;">
-	<img src="assets/yellowlift.gif" height="250px" width="350px" style="border-style:solid;border-width:12px;margin:20px;border-color:#000;">
-	<img src="assets/redblue1sped.gif" height="250px" width="350px" style="border-style:solid;border-width:8px;margin:20px;"><br /> 
-	<a href="shirt1.html">
-	<img src="assets/smoking.jpg" height="504px" width="322px" class="storeimg" style="margin-left:50px;">
-	</a>
-	<a href="shirt2.html">
-	<img src="assets/ignorancetee.jpg" height="504px" width="322px" class="storeimg">
-	</a>
-	<a href="shirt3.html">
-	<img src="assets/otsbasictee.jpg" height="504px" width="322px" class="storeimg">
-    </a>
-	<a href="shirt3.html">
-	<img src="assets/numberfour.jpg" height="504px" width="322px" class="storeimg" style="margin-left:50px;">
-    </a>
-	<a href="shirt3.html">
-	<img src="assets/numberfive.jpg" height="504px" width="322px" class="storeimg">
-    </a>
-	<a href="shirt3.html">
-	<img src="assets/numbersix.jpg" height="504px" width="322px" class="storeimg">
-    </a>
-  </div>
-</div>
 <!-- Third image/caption -->
 <div class="bgimg-1" style="opacity:0.95;min-height: 500px;">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;box-shadow: 0px 1px 50px #f7f7f7;">¿¿¿¿PAST COLLECTIONS¿¿¿¿</span>
+    <span class="border" id="smalltitle"><a href="sectiondiv.html">¿¿¿¿PAST COLLECTIONS¿¿¿¿</a></span>
   </div>
 </div>
 <div style="position:relative;">
-  <!-- <div style="color:#85C1E9; text-align:center; padding:50px 80px;z-index:1;background-color: #ffffc0;">
-	<div class="card"; style="border-style:solid;border-width:10px;box-shadow: 0px 1px 50px #000;margin:20px;left:40px;">
-        <img src="assets/sinkpose.jpg"  height="500px;" width="376px;" class="img-bot" alt="Card Back">
-        <img src="assets/sinkposecrop.gif" height="400px;" width="276px;" style= "padding: 50px; opacity: 1;" class="img-top" alt="Card Front">
-    </div>
-	<img src="assets/sweaterinvert.gif" height="605px" width="454px" style="border-style:solid;border-width:10px;margin:20px;">
-	<div class="card"; style="border-style:solid;border-width:10px;margin:20px;border-color:#C3B091;">
-		<img src="assets/spacejen.jpg" height="350px" width="255px" class="img-bot" alt="Card Back">
-		<img src="assets/spacejen.gif" height="300px" width="205px" style= "padding:20px; opacity: 1;" class="img-top" alt="Card Front" >
-	</div>
-  </div> -->
+  
 </div>
-<!-- <div class="bgimg-3" style="opacity:0.90;">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">MORE TO BE CONTINUED</span>
-  </div>
-</div> --> 
 </body>
 </html>

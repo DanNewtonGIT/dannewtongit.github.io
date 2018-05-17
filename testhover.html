@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  height: 504px;
+  width: 322px;
+  max-width: 322px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 322px;
+  height: 504px;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 504px;
+  width: 322px;
+  opacity: 0;
+  transition: .3s ease;
+  background-image: url(assets/hawaiian.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay1 {
+  opacity: 0.9;
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 504px;
+  width: 322px;
+  opacity: 0;
+  transition: .3s ease;
+  background-image: url(assets/hawaiian.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay2 {
+  opacity: 0.9;
+}
+
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+</style>
+<body>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+  <img src="assets/IMG-9157-2.jpg" alt="Avatar" class="image">
+  <div class="overlay1"> 
+  </div>
+</div>
+<div class="container">
+  <img src="assets/IMG-9185.JPG" alt="Avatar" class="image">
+  <div class="overlay2"> 
+  </div>
+</div>
+</body>
+</html>
