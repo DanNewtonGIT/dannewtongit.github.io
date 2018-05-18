@@ -40,6 +40,16 @@ body, html {
   background-image: url("assets/IMG-8010-21.jpg");
   min-height: 350px;
 }
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: initial;
+  only screen and (-webkit-min-device-pixel-ratio : 1.5),
+  only screen and (min-device-pixel-ratio : 1.5) {
+  .bgimg-2 {
+    background-image: url('assets/IMG_9737-2x.jpg');
+  }
+    }
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -99,44 +109,44 @@ h3 {
 	box-shadow: 0px 1px 70px #000;
 }
 
-.title {	
-	color:#85C1E9;	
+.title {
+	color:#85C1E9;
 	text-shadow: -4px 0 #000,0 4px #000,9px 0 #f7f7f7,0 -2px #000;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size:70px;
 	height: 100px;
-	width:300px;	
-	margin-top:0px;	
+	width:300px;
+	margin-top:0px;
 	top: -10px;
 	left:50%;
-	margin-left: -150px; 
-	font-weight:600;	
+	margin-left: -150px;
+	font-weight:600;
 	float:left;
 	z-index: 99;
 	opacity: 1;
 	position: fixed;
 	transition: all 0.3s;
 }
-.title:hover {	
+.title:hover {
 	color: #7A3E16;
 	text-shadow: -4px 0 #f7f7f7,0 4px #f7f7f7,9px 0 #000,0 -2px #f7f7f7;
 	font-size:76px;
-	width:350px;	 
+	width:350px;
 	font-weight:650;
 	cursor:no-drop;
 }
-.undertitle {	
-	color:#000;	
+.undertitle {
+	color:#000;
 	text-shadow: -2px 0 #f7f7f7,0 2px #f7f7f7,2px 0 #f7f7f7,0 -2px #f7f7f7;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size:20px;
 	height: 20px;
-	width:300px;	
-	margin-top:0px;	
+	width:300px;
+	margin-top:0px;
 	top: 70px;
 	left:57%;
-	margin-left: -150px; 
-	font-weight:600;	
+	margin-left: -150px;
+	font-weight:600;
 	float:left;
 	z-index: 98;
 	opacity: 1;
@@ -146,22 +156,22 @@ h3 {
 .undertitle:hover {
 	cursor:no-drop;
 	}
-.subtitle {	
-	color:#7CF681;	
-	font-family:verdana;	
+.subtitle {
+	color:#7CF681;
+	font-family:verdana;
 	font-size:15px;
 }
 
-li {	
-	display:inline;	
+li {
+	display:inline;
 	padding:40px;
 }
-#nav a{	
-	font-family:Arial,Helvetica,sans-serif;	
-	text-decoration:none;	
+#nav a{
+	font-family:Arial,Helvetica,sans-serif;
+	text-decoration:none;
 	color:#000;
-}	
-#nav:hover {	
+}
+#nav:hover {
 	background-image: url("assets/navbar3.jpg");
 	box-shadow: 0px 1px 70px #000;
 }
@@ -181,22 +191,22 @@ li {
 	<a href="sectiondiv.html">
 	<i><p class="title">O &bull; T &bull; S</p><br /><p class="undertitle">minimal collektion</p></i>
 	</a>
-	<ul id="navigation">	
+	<ul id="navigation">
 	</ul>
-</div> 
+</div>
 <div class="bgimg-1" style="opacity:0.95;">
 </div>
 <!-- 2nd image and caption -->
 <div class="bgimg-5" style="opacity:0.85;">
   <div class="caption">
     <span class="border" id="smalltitle"><a href="lookbook.html">SPRING 2018 LOOKBOOK</a></span>
-	
+
   </div>
 </div>
 <div class="bgimg-4" style="opacity:0.85;">
   <div class="caption">
     <span class="border" id="smalltitle"><a href="onthestreet.html">MINIMAL.</a></span>
-	
+
   </div>
 </div>
 <!-- 3rd image and caption -->
