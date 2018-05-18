@@ -36,13 +36,16 @@ body, html {
   background-image: url("assets/IMG-91762-3 copy.jpg");
   min-height: 300px;
 }
-<!-- @media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
-	min-width:1024px;
-	min-width:1024px;
+  only screen and (-webkit-min-device-pixel-ratio : 1.5),
+  only screen and (min-device-pixel-ratio : 1.5) {
+  .bgimg-2 {
+    background-image: url('assets/IMG_9737-2x.jpg');
+  }
     }
-} -->
+}
 a {
   text-decoration: none;
   color: inherit;
